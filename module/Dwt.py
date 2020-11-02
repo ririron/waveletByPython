@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 #離散ウェーブレットを実施するクラス
 import numpy as np
-import matplotlib.pyplot as plt
-from PIL import Image
 
 class Dwt:
 	def __init__(self, iniScaleFi, iniWaveletFi):
