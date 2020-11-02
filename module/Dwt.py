@@ -45,7 +45,7 @@ class Dwt:
 			tmpLowFreqComp[t], tmpHighFreqComp[t] = self.do1dimTransform(inputImg[t, :])
 
 		#各成分の初期化
-		cA = np.zeros((int(inputImgHeight/2), int(inputImgWidth/2)))
+		cA = np.zeros((int(inputImgWidth/2), int(inputImgHeight/2))) #転置するから順序が逆
 		cV = np.zeros(np.shape(cA))
 		cH = np.zeros(np.shape(cA))
 		cD = np.zeros(np.shape(cA))
